@@ -113,10 +113,10 @@ public class Parser {
 
 	// Program ::= int main '('')' { Declarations StatementList }
 	public Program parseProgram() throws IOException {		
-		eat(TokenType.INT);
+		/*eat(TokenType.INT);
 		eat(TokenType.MAIN);
 		eat(TokenType.LPAREN);
-		eat(TokenType.RPAREN);
+		eat(TokenType.RPAREN);*/
 		eat(TokenType.LBRACE);
 
 		Declarations declarations = parseDeclarations();
